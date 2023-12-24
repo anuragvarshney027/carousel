@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+}
+
+#gallary {
+    overflow: hidden;
+    max-width: 100%;
+}
+
+#gallary h2 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.gallaryBox {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.gallary {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.gallaryImg {
+    flex: 0 0 100%;
+}
+
+.gallaryImg img {
+    width: 100%;
+    height: auto;
+}
+
+/* Media Query for Laptop Screen Size */
+@media (min-width: 1024px) {
+
+    /* Increase font sizes and adjust layout for larger screens */
+    body {
+      font-size: 16px;
+      margin: 0;
+    }
+}
+
+  /* laptop view style for gallary section  */
+  #gallary h2 {
+    font-size: 3rem;
+  }
+
+  #contact {
+    padding: 100px;
+  }
+
+  #contact h2 {
+    font-size: 36px;
+  }
